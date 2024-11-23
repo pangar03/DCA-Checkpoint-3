@@ -14,6 +14,7 @@ class CreateForm extends HTMLElement {
 
     render() {
         if(this.shadowRoot){
+            this.shadowRoot.innerHTML =
             `
                 <form class="create-event-form">
                     <div>
