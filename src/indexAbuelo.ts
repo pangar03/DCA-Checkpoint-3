@@ -1,5 +1,5 @@
 import "./components/export"
-import { appState } from "./store";
+import { addObserver, appState } from "./store";
 import { Screens } from "./types/store";
 
 import AdminDashboard from "./screens/adminDashboard/adminDashboard";
@@ -11,7 +11,8 @@ import "./screens/userDashboard/userDashboard";
 class AppContainer extends HTMLElement {
     constructor(){
         super();
-        this.attachShadow({mode: "open"})
+        this.attachShadow({mode: "open"});
+        addObserver(this);
     }
 
     connectedCallback() {

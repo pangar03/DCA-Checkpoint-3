@@ -2,6 +2,9 @@ import  EventAdmin, {Attribute as EventAttribute} from '../../components/eventAd
 import '../../components/eventAdmin/eventAdmin';
 import { appState } from '../../store';
 
+import CreateForm from '../../components/createForm/createForm';
+import '../../components/createForm/createForm';
+
 class AdminDashboard extends HTMLElement {
     constructor(){
         super();
